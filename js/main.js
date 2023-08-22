@@ -139,7 +139,7 @@ function onLoadFetchCityNames() {
 
 function fetchAPIInJSONFormat(lon, lat) {
   console.log("latLongValues:::" + "lon>>>>" + lon + "lat>>>>" + lat);
-  let timerAPI = "http://www.7timer.info/bin/api.pl";
+  let timerAPI = "https://www.7timer.info/bin/api.pl";
   let urlParams =
     "?lon=" + lon + "&lat=" + lat + "&product=" + "civil&output=json";
   console.log(timerAPI + urlParams);
