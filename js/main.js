@@ -107,7 +107,7 @@ function onLoadFetchCityNames() {
   }
 
   cityCoordinatesDropDown.addEventListener("change", (e) => {
-    alert("......." + e.target.value);
+    //alert("......." + e.target.value);
     var targetData = e.target.value;
     //flagIcon.innerHTML = targetData.replace(/['"]+/g, '') ;
     var separatedArray = [];
@@ -151,7 +151,7 @@ function fetchAPIInJSONFormat(lon, lat) {
     type: "GET",
     dataType: "json",
     success: function (response) {
-      alert("Success");
+     // alert("Success");
       //createDynamicTable(response);
       createDynamicHTML(response);
     },
